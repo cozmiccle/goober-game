@@ -1,0 +1,79 @@
+html{
+    font-family:'Quicksand';
+    transition: 200ms;
+}
+.main{
+    margin-left:10%;
+    margin-right:10%;
+    text-align:center;
+    border-style:solid;
+    padding:10px;
+    border-radius:20px;
+    border-color:grey;
+    border-width:0px;
+}
+.news{
+    border-radius:20px;
+    background-color:lightgray;
+    overflow:hidden;
+}
+.shop{
+    border-radius:20px;
+    background-color:lightgray;
+    overflow:hidden;
+}
+.machines{
+    border-radius:20px;
+    background-color:lightgray;
+    overflow:hidden;
+}
+
+#gooberCount{
+    font-size:50px;
+}
+#gButton{
+    font-size:40px;
+    font-family:'Quicksand';
+    width:800px;
+    padding:50px;
+    border-style:solid;
+    border-radius:20px;
+    border-width:3px;
+    border-color:aqua;
+    background-color:rgb(134, 199, 255);
+    overflow:hidden;
+    position:relative;
+    bottom:0px;
+    transition:200ms;
+}
+#gButton:hover{
+    bottom:5px;
+    box-shadow: 0 12px 16px 0 rgba(94, 199, 244, 0.356);
+}
+#gButton:active{
+    bottom:2px;
+    background-color:rgb(74, 106, 135)
+}
+.generalButtons{
+    font-family:'Quicksand';
+    padding:10px;
+    border-style:solid;
+    border-radius:20px;
+    border-width:1px;
+    border-color:lightgray;
+    background-color:grey;
+    overflow:hidden;
+    transition:200ms;
+    position:relative;
+    bottom:0px;
+}
+.generalButtons:hover{
+    bottom:5px;
+    box-shadow: 0 12px 16px 0 rgba(128, 128, 128, 0.397);
+    border-color:grey;
+    background-color:lightgrey;
+}
+.generalButtons:active{
+    bottom:2px;
+    background-color:grey;
+}

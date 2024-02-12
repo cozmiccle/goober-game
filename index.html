@@ -1,0 +1,35 @@
+<html id="all">
+    <head>
+        <title>goober game</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="images/goobergame.png">
+    </head>
+    <body>
+        <div class="main">
+            <h1 id="gooberCount">0 goobers</h1>
+            <button id="gButton" onclick="gButtonPress()">the gooberinator</button>
+            <div class="settings" style="margin-left:20%;margin-right:20%;margin-top:1%">
+                <h1 style="margin-top:1%">Settings</h1>
+                <button class="generalButtons" onclick="toggleDarkMode()">toggle dark mode</button>
+            </div>
+            <!--news haha-->
+            <div class="news" id="news" style="margin-left:20%;margin-right:20%;margin-top:1%">
+                <h1 style="margin-top:1%">News:</h1>
+                <marquee direction="left" id="newsm">local aspiring goober collector embarks on mission to collect the goobers</marquee>
+            </div>
+            <!--shop haha-->
+            <div class="shop" id="shop" style="margin-left:20%;margin-right:20%;padding:1%;margin-top:1%">
+                <h1 style="margin-top:1%">Shop</h1>
+                <button id="item1Buy" class="generalButtons" onclick="buyItem(1)">buy autogoob (10 goobers)</button>
+                <button id="item2Buy" class="generalButtons" onclick="buyItem(2)">buy chicken randomizer (25 goobers)</button>
+            </div>
+            <!--machines haha-->
+            <div class="machines" id="machines" style="margin-left:20%;margin-right:20%;padding:1%;margin-top:1%">
+                <h1 style="margin-top:1%">Machines</h1>
+                <button id="autogoob-count" class="generalButtons" onclick="toggleAutogoobs()">disable autogoobs (0)</button>
+                <button id="ch-count" class="generalButtons" onclick="toggleCH()">disable chicken randomizers (0)</button>
+            </div>
+        </div>
+    </body>
+</html>
