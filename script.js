@@ -6,10 +6,12 @@ const shop = document.getElementById("shop");
 const item1 = document.getElementById("item1Buy");
 const item2 = document.getElementById("item2Buy");
 const autogoobCount = document.getElementById("autogoob-count")
+const crCount = document.getElementById("cr-count")
 const machines = document.getElementById("machines");
 const all = document.getElementById("all");
 
 var autogoobs = 0;
+chickenRand = 0;
 var goobers = 0;
 var shopVisible = false;
 var autogoobsDisabled = false;
@@ -102,6 +104,12 @@ function buyItem(item){
         autogoobCount.textContent = "disable autogoobs ("+autogoobs+")";
         autogoobStart()
     }
+    if(item == 2 && goobers >= 25){
+        goobers -= 25;
+        chickenRand += 1;
+        crCount.textContent = "disable chicken randomizers ("+chickenRand+")";
+        crStart()
+    }
 }
 function toggleAutogoobs(){
     if(!autogoobsDisabled){
@@ -117,6 +125,15 @@ function autogoobStart(){
         goobers+=2
     }
     setTimeout(autogoobStart,5000)
+}
+function toggleCR(){
+    if(!crDisabled){
+        crDisabled = true;
+        crCount.textContent = "enable chicken randomizers ("+chickenRand+")";
+    } else {
+        autogoobsDisabled = false;
+        crCount.textContent = "disable chicken randomizers ("+chickenRand+")";
+    }
 }
 function crStart(){
     if(!crDisabled){
