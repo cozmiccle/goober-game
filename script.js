@@ -1,3 +1,8 @@
+//dom check
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("dom loaded")
+});
+
 const gButton = document.getElementById("gButton");
 const gCount = document.getElementById("gooberCount");
 const news = document.getElementById("news");
@@ -11,7 +16,7 @@ const machines = document.getElementById("machines");
 const all = document.getElementById("all");
 
 var autogoobs = 0;
-chickenRand = 0;
+var chickenRand = 0;
 var goobers = 0;
 var shopVisible = false;
 var autogoobsDisabled = false;
