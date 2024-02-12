@@ -19,6 +19,7 @@ var crDisabled = false;
 var clickValue = 1;
 var darkMode = false;
 
+crCount.style.visibility = "hidden";
 item2.style.visibility = "hidden";
 news.style.visibility = "hidden";
 shop.style.visibility = "hidden";
@@ -108,6 +109,7 @@ function buyItem(item){
         goobers -= 25;
         chickenRand += 1;
         crCount.textContent = "disable chicken randomizers ("+chickenRand+")";
+        crCount.style.visibility = "visible";
         crStart()
     }
 }
@@ -136,10 +138,12 @@ function toggleCR(){
     }
 }
 function crStart(){
+    console.log("cr attempt")
     if(!crDisabled){
         crplate = Math.random(1,4)
         if(crplate == 3){
             goobers += 5
+            console.log("cr success")
         }
     }
     setTimeout(crStart,1000)
