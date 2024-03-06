@@ -4,9 +4,20 @@
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
         <link rel="icon" href="goobergame.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEWXTF0WM"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2ZEWXTF0WM');
+        </script>
     </head>
     <body>
-        <div class="main">
+        <div class="main" id="main">
             <h1 id="gooberCount">0 goobers</h1>
             <button id="gButton" onclick="gButtonPress()">the gooberinator</button>
             <div class="settings" style="margin-left:20%;margin-right:20%;margin-top:1%">
@@ -17,12 +28,14 @@
             <div class="news" id="news" style="margin-left:20%;margin-right:20%;margin-top:1%">
                 <h1 style="margin-top:1%">News:</h1>
                 <marquee direction="left" id="newsm">local aspiring goober collector embarks on mission to collect the goobers</marquee>
+                <button class="generalButtons" id="logButton" onclick="showLog()">show log [wip]</button>
             </div>
             <!--shop haha-->
             <div class="shop" id="shop" style="margin-left:20%;margin-right:20%;padding:1%;margin-top:1%">
                 <h1 style="margin-top:1%">Shop</h1>
                 <button id="item1Buy" class="generalButtons" onclick="buyItem(1)">buy autogoob (10 goobers)</button>
                 <button id="item2Buy" class="generalButtons" onclick="buyItem(2)">buy chicken randomizer (25 goobers)</button>
+                <button id="item3Buy" class="generalButtons" onclick="buyItem(3)" style="padding-top:3%">upgrade the gooberinator (120 goobers) [wip]</button>
             </div>
             <!--machines haha-->
             <div class="machines" id="machines" style="margin-left:20%;margin-right:20%;padding:1%;margin-top:1%">
@@ -30,6 +43,15 @@
                 <button id="autogoob-count" class="generalButtons" onclick="toggleAutogoobs()">disable autogoobs (0)</button>
                 <button id="cr-count" class="generalButtons" onclick="toggleCR()">disable chicken randomizers (0)</button>
             </div>
+        </div>
+        <div class="log [wip]" id="log">
+            <h1>Log</h1>
+            <h2>displays last five events</h2>
+            <p id="event1">local aspiring goober collector embarks on mission to collect the goobers</p>
+            <p id="event2"></p>
+            <p id="event3"></p>
+            <p id="event4"></p>
+            <p id="event5"></p>
         </div>
     </body>
 </html>

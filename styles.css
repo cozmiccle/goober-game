@@ -1,16 +1,32 @@
 html{
     font-family:'Quicksand';
     transition: 200ms;
+    text-align:center;
 }
 .main{
     margin-left:10%;
     margin-right:10%;
+    display:inline-block;
+    width:800px;
     text-align:center;
     border-style:solid;
     padding:10px;
     border-radius:20px;
     border-color:grey;
-    border-width:0px;
+    border-width:5px;
+}
+.log{
+    display:inline-block;
+    width:300px;
+    height:820px;
+    text-align:center;
+    border-style:solid;
+    padding:10px;
+    border-radius:20px;
+    border-color:grey;
+    border-width:5px;
+    position:relative;
+    bottom:7000px;
 }
 .news{
     border-radius:20px;
